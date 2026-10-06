@@ -55,7 +55,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-r
 footer { padding: 2rem 0 3rem; text-align: center; font-size: .85em; color: var(--muted); }
 footer p { margin: 0 0 .35rem; }
 footer .name { font-style: italic; }
-footer a { color: var(--muted); }                      /* deliberately pale, but still readable */
+footer a { color: var(--muted); font-size: .82em; text-decoration: none; }   /* small, pale, no underline */
+footer a:hover, footer a:focus-visible { text-decoration: underline; }       /* underline only on hover or keyboard focus */
 
 /* ---- Legal notice and privacy page: plain left-aligned text ---- */
 .legal { padding-top: 3.5rem; font-size: 1.05rem; }
